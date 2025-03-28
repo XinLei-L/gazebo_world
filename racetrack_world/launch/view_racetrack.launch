@@ -1,0 +1,9 @@
+<launch>
+  <!-- Show Gazebo GUI on launch -->
+	<arg name="world_version" default="day"/>
+	<arg name="gui" default="true"/>
+  <include file="$(find racetrack_world)/launch/racetrack.launch">
+    <arg name="gui" value="true"/>
+    <arg name="world_version" value="day"/>
+  </include>
+</launch>
